@@ -129,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         if (num2 == 0) {
                             Toast.makeText(this, "Ошибка: деление на ноль!", Toast.LENGTH_SHORT).show();
                             clearAll();
+                            updateDisplay("Ошибка деления на ноль!");
                             return;
                         }
                         result = num1 / num2;
