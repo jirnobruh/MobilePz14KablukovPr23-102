@@ -26,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initViews();
-        setClickListeners();
-    }
-
-    private void initViews() {
         etDisplay = findViewById(R.id.etDisplay);
 
         btn0 = findViewById(R.id.btn0);
@@ -53,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         btnClear = findViewById(R.id.btnClear);
         btnBackspace = findViewById(R.id.btnBackspace);
         btnDecimal = findViewById(R.id.btnDecimal);
+
+        setClickListeners();
     }
 
     private void setClickListeners() {
